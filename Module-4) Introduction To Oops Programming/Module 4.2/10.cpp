@@ -27,8 +27,8 @@ public:
 
 int main() 
 {
-    String s1("bhavy");
-    String s2("dhairy");
+    String s1("Yuvi");
+    String s2("Dodiya");
     s1.get();
     s2.get();
     String s3 = s1 + s2;

@@ -14,19 +14,19 @@ class Number
 		friend void maxvalues(Number &obj);
 		void display()
 		{
-			cout<<"\n Enter The Number1:"<<num1;
-			cout<<"\n Enter The Number2:"<<num2;
+			cout<<"\n Number1:"<<num1;
+			cout<<"\n Number2:"<<num2;
 		}
 };
 void maxvalues(Number &obj)
 {
 	if(obj.num1>obj.num2)
 	{
-		cout<<"\n Number1 Is Maximum.";
+		cout<<"\n num1 is  maximum.";
 	}
 	else
 	{
-		cout<<"\n Number2 Is Maximum.";
+		cout<<"\n num2 is maximum.";
 	}
 }
 int main()

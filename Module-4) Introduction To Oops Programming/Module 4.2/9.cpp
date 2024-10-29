@@ -12,14 +12,16 @@ class Mat
 			cin>>size;
 			for(i=0;i<size;i++)
 			{
+				cout<<"Enter the element in a["<<i<<"] :";
 				cin>>a[i] ;
 			}
 		}
 		void display()
 		{
+			cout<<"Array is :-";
 			for(i=0;i<size;i++)
 			{
-				cout<<a[i]<<"\t" ;
+				cout<<a[i]<<"\n" ;
 			}
 		}
 		Mat operator+(Mat obj)
@@ -36,15 +38,15 @@ class Mat
 int main()
 {
 	Mat m1;
-	cout<<"\n Matrix1:";
+	cout<<"\nMatrix1:";
 	m1.input();
 	m1.display();
 	Mat m2;
-	cout<<"\n Matrix2:";
+	cout<<"\nMatrix2:";
 	m2.input();
 	m2.display();
 	Mat m3 =m1 + m2;
-	cout<<"\n \t Matrix is=";
+	cout<<"\nMatrix is";
 	m3.display();
 	return 0;
 }

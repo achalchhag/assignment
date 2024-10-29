@@ -7,33 +7,37 @@ Function Overloading
 #define pi 3.14
 using namespace std;
 class calc{
-
 	public:
-		void area(int radius){
-			cout<<"\ncircle area = "<<pi*radius*radius;
-		}
-		void area(double len,double width)
+		void area(int l,int width)
 		{
-			cout<<"\nTriangle area = "<<0.5*len*width;
+			cout<<"\nRectangle area = "<<l*width;
 		}
-		void area(int len,int width)
+		void area(double len,double w)
 		{
-			cout<<"\nRectangle area = "<<len*width;
+			cout<<"\nTriangle area = "<<0.5*len*w;
+		}
+		void area(int r)
+		{
+			cout<<"\ncircle area = "<<r*r*pi;
 		}
 };
 int main()
 {
 	calc c1;
-	double len,width;
-	int radius,i,s;
-	cout<<"Enter length and width in double = ";
-	cin>>len>>width;
+	double len,w;
+	int r,l,width;
+	cout<<"Enter length= ";
+	cin>>len;
+	cout<<"Enter the width=";
+	cin>>w;
 	cout<<"Enter radius = ";
-	cin>>radius;
-	cout<<"Enter length and width in int = ";
-	cin>>i>>s;	
-	c1.area(len,width);
-	c1.area(i,s);
-	c1.area(radius);
+	cin>>r;
+	cout<<"Enter length for rectangle =";
+	cin>>l;
+	cout<<"Enter the width for rectangle ";
+	cin>>width;
+	c1.area(len,w);
+	c1.area(l,width);
+	c1.area(r);
 	return 0;
 }

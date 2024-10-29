@@ -31,10 +31,10 @@ The class result can inherit the details of the marks obtained in the test and r
  	public:
  		void display()
  		{
- 			cout<<"The roll no  of the student is :"<<set2()<<endl;
- 			cout<<"The marks get in first subject is :"<<m1<<endl;
- 			cout<<"The marks get in second subject is :"<<m2<<endl;
-			cout<<"The total marks of the subject is :"<<m1+m2<<endl;
+ 			cout<<"The roll no is :"<<set2()<<endl;
+ 			cout<<"The marks first subject is :"<<m1<<endl;
+ 			cout<<"The marks second subject is :"<<m2<<endl;
+			cout<<"The total marks is :"<<m1+m2<<endl;
 		 }
  	
  	
@@ -44,8 +44,10 @@ int main()
 	int roll, m1,m2;
  	cout<<"Enter your roll no:";
  	cin>>roll;
- 	cout<<"Enter your marks for two subject:";
- 	cin>>m1>>m2;
+ 	cout<<"Enter your mark of 1st subject:";
+ 	cin>>m1;
+ 	cout<<"Enter your mark of 2nd subject:";
+ 	cin>>m2;
  	result r1;
  	r1.set1(roll);
  	r1.get1(m1,m2);
