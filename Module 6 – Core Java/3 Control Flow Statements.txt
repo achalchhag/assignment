@@ -1,0 +1,24 @@
+Theory:
+If-Else Statements
+If-else statement helps you to run a specific block of a program if the condition is true or else, it will check other conditions.
+It is used to control the flow or to determine the rules in a program.
+
+Switch Case Statements
+The switch case in java executes one statement from multiple ones.
+
+Loops (For, While, Do-While)
+while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition.
+The while loop can be thought of as a repeating if statement.
+
+For loop: for loop provides a concise way of writing the loop structure. 
+Unlike a while loop, a for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, 
+easy to debug structure of looping.
+
+Do while: do while loop is similar to while loop with only difference that it checks for condition after executing the statements.
+
+Break and Continue Keywords
+Break :The break statement is used to exit a loop prematurely, regardless of the loop's condition
+
+Continue :The continue statement is used to skip the current iteration of a loop and proceed to the next iteration.
+
+

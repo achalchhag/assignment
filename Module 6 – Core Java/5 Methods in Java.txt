@@ -1,0 +1,19 @@
+Theory:
+Defining Methods:
+A method in Java is a set of instructions that can be called for execution using the method name
+
+Method Parameters and Return Types:
+Method parameters are variables that act as placeholders for the values you want to pass into a method when you call it.
+
+Return Types:
+The return type of a method specifies the type of value that the method will return after its execution.
+
+Method Overloading:
+Method overloading in Java means having two or more methods (or functions) in a class with the same name and different arguments
+
+Static Methods and Variables:
+Static Methods:
+a static method is a method that belongs to the class itself, rather than to any instance of the class. This means you can call a static method without creating an object of the class.
+
+Variables:
+Variables in Java language are the names used to refer to data stored in the memory

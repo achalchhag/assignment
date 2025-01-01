@@ -1,0 +1,25 @@
+10. Interfaces and Abstract Classes
+Theory:
+Abstract Classes and Methods
+abstract class 
+-- abstract keyword is used
+-- never done initialisation
+-- abstract class always depend on normal class
+-- normal nd abstract method 
+
+abstract method
+-- abstract keyowrd
+-- abstraction method only have method have doesnot have a code
+-- child class have a responsibilty to write a code of abstract method
+-- for abstract method abstract class is necessaary 
+
+Interfaces: Multiple Inheritance in Java
+interface -- data hide and support multiple inheritance 
+interface keyword is used
+never create object
+by default all method are abstract
+by default all the variable is constant
+implements word is used
+
+Implementing Multiple Interfaces
+A class can implement multiple interfaces. This means that a single class can inherit behavior from multiple sources, allowing for greater flexibility and code reuse.

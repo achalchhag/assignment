@@ -1,0 +1,20 @@
+Theory:
+Constructor Types (Default, Parameterized)
+Default:
+A constructor with no parameters.If you don't explicitly define any constructor in a class, 
+the Java compiler automatically provides a default constructor.
+Parameterized:
+A constructor that accepts one or more parameters.
+
+Copy Constructor (Emulated in Java)
+A constructor that creates a new object by copying the values from an existing object of the same class
+
+Constructor Overloading
+Constructor overloading in Java is a concept where a class has multiple constructors with different parameter lists
+
+Object Life Cycle and Garbage Collection
+Object Life Cycle:
+The life cycle of an object refers to the stages it goes through from its creation to its eventual destruction.
+
+Garbage Collection:
+The Java garbage collector reclaims the memory occupied by inaccessible objects.

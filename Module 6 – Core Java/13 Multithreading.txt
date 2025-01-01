@@ -1,0 +1,20 @@
+13. Multithreading
+Theory:
+Introduction to Threads
+A thread is a lightweight, independent unit of execution within a program.
+It allows you to perform multiple tasks concurrently, enhancing the performance and responsiveness of your applications.
+
+Creating Threads by Extending Thread Class or Implementing Runnable Interface
+Extending the Thread Class:
+Create a class that extends the Thread class. This gives your class all the properties and methods of a thread.
+Override the run() method. This method contains the code that will be executed by the thread.
+
+Implementing the Runnable Interface:
+Create a class that implements the Runnable interface. This interface requires you to implement the run() method.
+Implement the run() method. This method contains the code that will be executed by the thread.
+
+Thread Life Cycle
+A thread's life cycle encompasses the various states it transitions through from creation to termination. These states are defined in the Thread.State
+
+Synchronization and Inter-thread Communication
+A thread's life cycle encompasses the various states it transitions through from creation to termination. These states are defined in the Thread.State

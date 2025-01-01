@@ -1,0 +1,26 @@
+Theory:
+Basics of OOP: Encapsulation, Inheritance, Polymorphism, Abstraction
+Encapsulation:
+Bundling data (variables) and the methods that operate on the data into a single unit (class)
+Inheritance 
+child class can use the parent class using extend keyword
+Polymorphism
+one interface and multiple implementation
+Abstraction:
+to hide sensitive data
+
+Inheritance: Single, Multilevel, Hierarchical
+1. single inheritance -- single child nd single parent
+2. multiple inheritance -- 1child nd multiple parent
+3.multilevel inheritance -- class inheritance of base class nd make a chain
+4.hybrid -- combination of any 2 inheritance
+5. hierarchical -- multiple child nd single parent
+
+Method Overriding and Dynamic Method Dispatch
+Method Overriding:
+It has 1 class and have multiple method,The name of the method would be same and also have same argument
+
+Dynamic Method Dispatch:
+Dynamic Method Dispatch also known as Runtime Polymorphism, 
+is a fundamental concept in Java that enables the determination of which method to execute at runtime, rather than at compile time.
+

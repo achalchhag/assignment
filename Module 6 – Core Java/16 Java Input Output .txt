@@ -1,0 +1,14 @@
+16. Java Input/Output (I/O)
+Theory:
+Streams in Java (InputStream, OutputStream)
+InputStream:
+Used for reading data from a source, such as a file, network connection, or keyboard.
+OutputStream:
+Used for writing data to a destination, such as a file, network connection, or console.
+
+Reading and Writing Data Using Streams
+Reading and writing data using streams" refers to a method of transferring data between a computer system and a source (like a file, network connection, or device) by processing it in continuous chunks, rather than loading the entire data set into memory at once.
+This allows for efficient handling of large data volumes, especially when dealing with files or network streams that might be too big to fit entirely in memory.
+
+Handling File I/O Operations
+the process of performing input and output actions on a computer file, such as reading data from a file to be used by a program, or writing data from a program to a file for storage; essentially, it's the mechanism that allows a program to interact with the file system to access and manipulate data within files.

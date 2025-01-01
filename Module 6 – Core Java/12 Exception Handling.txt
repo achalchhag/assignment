@@ -1,0 +1,35 @@
+12. Exception Handling
+Theory:
+Types of Exceptions: Checked and Unchecked
+Checked:
+Checked exceptions are exceptions that the compiler forces you to handle. 
+You must either catch them using a try-catch block or declare them in the method signature using the throws keyword.
+
+Unchecked:
+Unchecked exceptions are exceptions that the compiler does not force you to handle. You can choose to handle them, but it is not mandatory.
+
+try, catch, finally, throw, throws
+try:
+The try block encloses the code that might throw an exception.
+If an exception occurs within the try block, the control flow is transferred to the corresponding catch block. 
+
+catch:
+The catch block handles the exception thrown by the try block.
+It specifies the type of exception it can handle and contains the code to deal with that exception.
+You can have multiple catch blocks to handle different types of exceptions. 
+
+finally:
+The finally block contains code that is always executed, regardless of whether an exception occurred or not.
+It is used to perform cleanup operations like closing files or releasing resources. 
+
+throw:
+The throw keyword is used to explicitly throw an exception.
+You can use it to throw a built-in exception or a custom exception that you have created. 
+
+throws:
+The throws keyword is used in the method signature to declare that the method might throw a checked exception.
+It indicates that the method does not handle the exception itself, but passes it to the calling method to handle
+
+Custom Exception Classes
+Custom exception classes allow you to create your own exceptions tailored to the specific needs of your application.
+They provide a way to handle exceptional situations in a more meaningful and organized manner.

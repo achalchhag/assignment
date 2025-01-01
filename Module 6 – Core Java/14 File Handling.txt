@@ -1,0 +1,25 @@
+14. File Handling
+Theory:
+Introduction to File I/O in Java (java.io package)
+File I/O (Input/Output) in Java refers to the process of reading data from and writing data to files. 
+It's a fundamental concept in programming, enabling you to interact with external storage and persist data beyond the runtime of your application
+
+FileReader and FileWriter Classes
+FileReader:
+It provides methods to read characters from a file one by one, or in bulk into an array
+
+Filewriter Classes:
+It provides methods to write characters to a file one by one, or in bulk from an array
+
+BufferedReader and BufferedWriter
+BufferReader:
+BufferedReader is a class thaBufferedWriter is a class used to write text to a character-output stream more efficiently. 
+BudderedWriter:
+BufferedWriter is a class used to write text to a character-output stream more efficiently
+
+Serialization and Deserialization
+Serialization:
+Serialization in Java is the concept of representing an object's state as a byte stream
+
+Deserialization:
+Deserialization it is the process of converting a stream of bytes to the original state of the object.

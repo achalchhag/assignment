@@ -1,0 +1,70 @@
+2. Data Types, Variables, and Operators
+Theory:
+1.Primitive Data Types in Java (int, float, char, etc.)
+byte: 8-bit signed integer (-128 to 127)
+short: 16-bit signed integer (-32,768 to 32,767)
+int: 32-bit signed integer (-2,147,483,648 to 2,147,483,647)
+long: 64-bit signed integer (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+float: 32-bit single-precision floating-point number
+double: 64-bit double-precision floating-point number
+char: 16-bit Unicode character
+boolean: Represents true or false values
+
+2.Variable Declaration and Initialization
+Variable: A variable is a named container that holds a value.
+Declaration:Informs the compiler of a variable's existence and location in the program.
+A declaration must include the variable's name and data type, and end with a semicolon.
+Initialization:Assigns a value to the variable. Each programming language has its own method for initializing a variable
+
+3.Operators: Arithmetic, Relational, Logical, Assignment, Unary, and Bitwise
+Arithmetic :- 
+* : Multiplication
+/ : Division
+% : Modulo
++ : Addition
+– : Subtraction
+
+Relational :-
+== , Equal to.
+!= , Not equal to.
+< , Less than.
+<= , Less than or equal to.
+> , Greater than.
+>= , Greater than or equal to.
+
+Assignment:-
++= , Add and assign.
+-= , Subtract and assign.
+*= , Multiply and assign.
+/= , Divide and assign.
+%= , Modulo and assign.
+
+Logical:- 
+&&, Logical AND: returns true when both conditions are true.
+||, Logical OR: returns true if at least one condition is true.
+!, Logical NOT: returns true when a condition is false and vice-versa
+
+Unary:-
+- , Negates the value.
++ , Indicates a positive value (automatically converts byte, char, or short to int).
+++ , Increments by 1.
+Post-Increment: Uses value first, then increments.
+Pre-Increment: Increments first, then uses value.
+-- , Decrements by 1.
+Post-Decrement: Uses value first, then decrements.
+Pre-Decrement: Decrements first, then uses value.
+! , Inverts a boolean value.
+
+Bitwise:-
+& (Bitwise AND) – returns bit-by-bit AND of input values.
+| (Bitwise OR) – returns bit-by-bit OR of input values.
+^ (Bitwise XOR) – returns bit-by-bit XOR of input values.
+~ (Bitwise Complement) – inverts all bits (one’s complement)
+
+
+4.Type Conversion and Type Casting
+Type Conversion:-
+Also called type coercion or implicit type conversion, this is when the compiler or runtime automatically changes the data type.
+
+Type Casting
+Also called explicit type conversion, this is when the programmer manually changes the data type	

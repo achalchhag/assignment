@@ -1,0 +1,28 @@
+11. Packages and Access Modifiers
+Theory:
+Java Packages: Built-in and User-Defined Packages
+Built-in:
+We already have various pre-defined packages and these packages contain large numbers of classes and interfaces that we used in java are known as Built-in packages.
+User-Defined Packages:
+As the name suggests user-defined packages are a package that is defined by the user or programmer.
+
+Access Modifiers: Private, Default, Protected, Public
+Private:
+Private is an access modifier that restricts the visibility of a class member (field, method, or constructor) to the class in which it is declared.
+This means that only code within the same class can access and use the private member.
+
+Default:
+the default access specifier is also known as package-private. It's applied when no access modifier is explicitly specified for a class, method, or variable.
+
+Protected:
+allows members to be accessed within the same class, subclasses, and classes in the same package. This means that protected members can be accessed by the class itself, its subclasses and other classes in the same package.
+
+Public:
+The public access modifier is the direct opposite of the private access modifier. A class, method or variable can be declared as public and it means that it is accessible from any class.
+
+Importing Packages and Classpath
+Importing Packages:
+The import statement allows you to access classes and interfaces from other packages without having to use their fully qualified names.
+
+Classpath:
+The classpath is an environment variable that tells the Java compiler and runtime where to find class files and libraries.

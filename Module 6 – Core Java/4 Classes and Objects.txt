@@ -1,0 +1,26 @@
+Theory:
+Defining a Class and Object in Java
+Class:
+A class is a template or a blueprint that describes the characteristics and behaviors of a particular type of object
+
+Object:
+An object is an instance of a class, representing a real-world entity with its own specific state and behavior
+
+Constructors and Overloading
+Constructors:
+a Constructor is a block of codes similar to the method.It is called when an instance of the class is created. 
+At the time of calling the constructor, memory for the object is allocated in the memory
+
+Overloading:
+Constructor overloading in Java is the ability to define multiple constructors within a class, each with a different set of parameters. 
+This allows you to create objects of the class in different ways, depending on the data you have available at the time of object creation
+
+Object Creation, Accessing Members of the Class
+Object Creation:
+To create an object in Java, you use the new keyword followed by the class name and optional constructor arguments if the class has a constructor
+
+Accessing Members of the Class:
+accessing members of a class (fields and methods) depends on their access modifiers and the relationship between the accessing class and the class containing the member
+
+this Keyword:
+the this keyword is a reference variable that refers to the current object

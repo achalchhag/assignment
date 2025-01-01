@@ -1,0 +1,41 @@
+1. Introduction to Java
+Theory:
+-- History of Java
+-> It began in 1991 at Sun Microsystems, where a team led by James Gosling set out to create a new programming language for interactive television.
+   the project soon shifted focus to the burgeoning World Wide Web.
+
+-- Features of Java (Platform Independent, Object-Oriented, etc.)
+-> Key Festure of Java
+Platfrom Independent:Write Once,Run Anywhere
+Object Oriented:Java is a fully object-oriented language, adhering to the principles of:
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+Simple and Easy to Learn
+Robust & Secure
+Multithreaded
+Distributed
+Dynamic   
+	 
+-- Understanding JVM, JRE, and JDK
+Jvm -- Java virtual machine
+a virtual machine that allows Java programs to run on different operating systems and platforms .
+It acts as an interpreter between the Java programming language and the hardware, and is considered the core of the Java programming language
+
+Jre -- Java Runtime Enviroment
+a software layer that allows Java programs to run on a computer's operating system.
+It's one of three components required for Java programs to run, along with the Java Development Kit (JDK) and the Java Virtual Machine (JVM)
+
+Jdk -- Java Development kit
+a software package that provides tools for developing Java applications
+	
+-- Setting up the Java environment and IDE (e.g., Eclipse, IntelliJ)
+first download and install the Java Development Kit (JDK) and then configure an IDE like Eclipse or IntelliJ IDEA, 
+which involves setting the path to your JDK in the IDE settings to allow it to compile and run Java code; 
+this usually involves setting an environment variable called "JAVA_HOME" on your system
+
+-- Java Program Structure (Packages, Classes, Methods)
+Packages:Packages are used to organize related classes and interfaces into a namespace. This helps avoid naming conflicts and makes code more manageable.
+Classes: Classes are the building blocks of Java programs. They define the structure and behavior of objects.
+Methods: Methods are actions that a class can perform. They encapsulate specific functionality.

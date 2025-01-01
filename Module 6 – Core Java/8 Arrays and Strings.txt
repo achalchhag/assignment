@@ -1,0 +1,38 @@
+Theory:
+One-Dimensional and Multidimensional Arrays
+One-Dimensional:
+A one-dimensional array is a linear structure that stores a list of values.
+Multidimenional Arrays:
+A multidimensional array is an array of arrays, essentially representing a table-like structure with rows and columns.
+
+String Handling in Java: String Class, StringBuffer, StringBuilder
+String Class:
+Represents an immutable sequence of characters, meaning its content cannot be changed once created.
+
+StringBuffer:
+StringBuffer is a class that represents a mutable (modifiable) sequence of characters.
+This means you can change its content after it's created, unlike the String class, which is immutable.
+
+StringBuilder:
+String Builder is a class used to create mutable (modifiable) strings. 
+This means you can change the content of a StringBuilder object without creating a new object, unlike the String class which is immutable.
+
+Array of Objects:
+arrays can contain elements of primitive types and dynamically create objects of the same type. An array is a container for objects in Java.
+A class in Java is also a user-defined data type. The term array of objects refers to an array of class-type elements.
+
+String Methods (length, charAt, substring, etc.)
+length(): Returns the number of characters in the string.
+charAt(int index): Returns the character at the specified index.
+substring(int beginIndex): Returns a new string that is a substring of the original string, starting at the specified index.
+substring(int beginIndex, int endIndex): Returns a new string that is a substring of the original string, starting at beginIndex and ending at endIndex - 1.
+concat(String str): Concatenates the specified string to the end of the original string.
+toUpperCase(): Returns a new string with all characters converted to uppercase.
+toLowerCase(): Returns a new string with all characters converted to lowercase. 
+trim(): Returns a new string with leading and trailing whitespace removed.
+equals(Object anObject): Compares the original string to another object for equality.
+equalsIgnoreCase(String anotherString): Compares the original string to another string, ignoring case differences.
+replace(char oldChar, char newChar): Returns a new string with all occurrences of oldChar replaced with newChar.
+split(String regex): Splits the string into an array of substrings based on the specified regular expression.
+indexOf(String str): Returns the index of the first occurrence of the specified substring within the string, or -1 if not found.
+lastIndexOf(String str): Returns the index of the last occurrence of the specified substring within the string, or -1 if not found.

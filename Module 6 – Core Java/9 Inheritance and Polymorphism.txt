@@ -1,0 +1,28 @@
+Theory:
+Inheritance Types and Benefits
+Single Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Multiple Inheritance
+Hierarchical Inheritance
+Benefits:
+Code Resulability
+Organization And structure
+Extensibility
+code optimization
+
+Method Overriding
+Method Overriding have 1 class and can have multiple method with same name but with same argumrnt.
+
+Dynamic Binding (Run-Time Polymorphism):
+Dynamic binding in Java refers to the process of determining the specific implementation of a method at runtime, based on the actual type of the object being referred to, 
+rather than the declared type of the reference variable. It is also known as late binding or runtime polymorphism
+
+Super Keyword and Method Hiding
+Super Keyword:
+he super keyword is used to refer to the immediate parent class (superclass) of the current class.
+It allows you to access members (fields, methods, and constructors) of the superclass that might be hidden or overridden by the subclass.
+
+Method Hiding:
+Method hiding occurs when a subclass defines a static method with the same signature (name, return type, and parameter list) as a static method in the superclass.
+Unlike method overriding (which applies to instance methods), method hiding doesn't involve dynamic dispatch at runtime

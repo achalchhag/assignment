@@ -1,0 +1,44 @@
+15. Collections Framework
+Theory:
+Introduction to Collections Framework
+The Java Collections Framework is a library of classes and interfaces for working with collections of objects.
+
+List, Set, Map, and Queue Interfaces
+List:
+Java List interface is a member of the Java Collections Framework.
+
+Set:
+A Set is an interface that represents a collection of unique elements. It extends the Collection interface and adds the restriction that duplicate elements are not allowed
+
+Map:
+A Map is an interface in the java.util package that represents a collection of key-value pairs, where each key is associated with a single value
+
+Queue:
+Queue is an interface available in java. util package and extends java. util. Collection interface.
+
+ArrayList, LinkedList, HashSet, TreeSet, HashMap, TreeMap
+Array List:
+An ArrayList is a resizable-array implementation of the List interface. It provides a dynamic way to store a collection of objects, unlike a regular array which has a fixed size
+
+LinkedList:
+A linked list in Java is a dynamic data structure whose size increases as you add the elements and decreases as you remove the elements from the list.
+
+HashSet:
+A HashSet is a collection that implements the Set interface, which means it stores unique elements without any particular order.
+
+TreeSet:
+A TreeSet is a collection that implements the NavigableSet interface, which in turn extends the SortedSet interface.
+
+HashMap:
+HashMap is a data structure that uses the Map interface and a hash table for storing key-value pairs.
+
+TreeMap:
+A TreeMap is a data structure that implements the NavigableMap interface, which in turn extends the SortedMap interface:
+
+Iterators and ListIterators
+Iterators:
+an Iterator is an interface that allows you to traverse through a collection of objects, such as ArrayList, LinkedList, HashSet, etc.
+It provides a way to access each element of the collection sequentially without exposing the underlying implementation details.
+
+ListIterators:
+ListIterator is a Java Iterator, which is used to iterate elements one-by-one from a List implemented object.
