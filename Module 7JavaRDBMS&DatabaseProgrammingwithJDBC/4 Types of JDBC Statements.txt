@@ -1,0 +1,38 @@
+4. Types of JDBC Statements
+Theory:
+Overview of JDBC Statements:
+Statement: Executes simple SQL queries without parameters.
+The Statement is an interface that is available in java. sql package with JDBC.
+This interface is part of JDBC API and can execute simple SQL queries without parameters.
+
+PreparedStatement: Precompiled SQL statements for queries with parameters.
+A "PreparedStatement" is a feature in database systems where an SQL statement is pre-compiled and stored, allowing you to execute it multiple times with different parameter values, 
+essentially acting as a template where you can plug in specific data each time without needing to recompile the entire query every execution, which significantly improves performance, especially when running the same query with varying input data repeatedly
+
+CallableStatement: Used to call stored procedures.
+CallableStatement is used to execute SQL stored procedures. JDBC provides a stored procedure SQL escape that allows stored procedures to be called in a standard way for all RDBMS's
+
+Differences between Statement, PreparedStatement, and CallableStatement
+
+Statement	
+It is used to execute normal SQL queries.		
+It is preferred when a particular SQL query is to be executed only once.		
+You cannot pass the parameters to SQL query using this interface.		
+This interface is mainly used for DDL statements like CREATE, ALTER, DROP etc.	.	
+The performance of this interface is very low.		The performance of this interface is hig
+
+PreparedStatement	
+It is used to execute parameterized or dynamic SQL queries.
+It is preferred when a particular query is to be executed multiple times.
+You can pass the parameters to SQL query at run time using this interface.
+It is used for any kind of SQL queries which are to be executed multiple times.
+The performance of this interface is better than the Statement interface (when used for multiple execution of same query).
+
+
+
+CallableStatement
+It is used to call the stored procedures.
+It is preferred when the stored procedures are to be executed.
+You can pass 3 types of parameters using this interface. They are – IN, OUT and IN OUT.
+It is used to execute stored procedures and functions.
+The performance of this interface is high

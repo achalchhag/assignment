@@ -1,0 +1,20 @@
+7. Database Metadata
+Theory:
+What is DatabaseMetaData?
+DatabaseMetaData is an interface within the JDBC API that provides information about the connected database,
+including its capabilities, tables, columns, data types, and other metadata, allowing developers to dynamically 
+query and understand the structure of the database they are interacting with without needing to hardcode details about it.
+
+Importance of Database Metadata in JDBC
+In JDBC, database metadata is crucial because it provides detailed information about the underlying database structure,
+including tables, columns, data types, and supported features, allowing developers to write flexible 
+applications that can interact with different databases without needing to hardcode specific details, essentially making their applications more portable and adaptable to various database systems
+
+Methods provided by DatabaseMetaData (getDatabaseProductName, getTables,etc.)
+The DatabaseMetaData interface in Java provides a wealth of methods to retrieve information about the underlying database. Here are a few commonly used ones:
+getDatabaseProductName(): Retrieves the name of the database product.
+getDatabaseProductVersion(): Retrieves the version number of the database product.
+getDriverName(): Retrieves the name of the JDBC driver.
+getDriverVersion(): Retrieves the version number of the JDBC driver.
+getURL(): Retrieves the URL used to connect to the database.
+getUserName(): Retrieves the username used to connect to the database.

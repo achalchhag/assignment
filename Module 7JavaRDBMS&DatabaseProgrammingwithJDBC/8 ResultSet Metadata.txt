@@ -1,0 +1,21 @@
+8. ResultSet Metadata
+Theory:
+What is ResultSetMetaData?
+In Java, ResultSetMetaData is an interface that provides information about the columns in a ResultSet object. 
+It allows you to access details like:
+Number of columns: Get the total number of columns in the result set using getColumnCount().
+Column names: Retrieve the name of a specific column using getColumnName(int column) where column is the column index (starting from 1).
+Column data types: Determine the data type of a column using getColumnType(int column).
+Column display size: Get the maximum width of a column using getColumnDisplaySize(int column).
+Column nullability: Check if a column can contain null values using isNullable(int column)
+
+Importance of ResultSet Metadata in analyzing the structure of query results
+The ResultSetMetaData provides information about the obtained ResultSet object like, the number of columns, names of the columns, datatypes of the columns, name of the table etc… 
+Following are some methods of ResultSetMetaData class. Retrieves the number of columns in the current ResultSet object
+
+
+Methods in ResultSetMetaData (getColumnCount, getColumnName,getColumnType)
+getColumnCount()	Retrieves the number of columns in the current ResultSet object.
+getColumnLabel()	Retrieves the suggested name of the column for use.
+getColumnName()	Retrieves the name of the column.
+getTableName()	Retrieves the name of the table

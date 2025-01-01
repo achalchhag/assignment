@@ -1,0 +1,15 @@
+Theory:
+What is ResultSet in JDBC?
+A "ResultSet" is a Java object that stores the results of an executed SQL query, essentially acting as a table containing rows and columns of data retrieved from a database,
+allowing you to access and iterate through the data returned by a query using a cursor-like mechanism to navigate through each row individually; it's a core component for retrieving data from a database using JDBC.
+
+Navigating through ResultSet (first, last, next, previous)
+
+"next()": This method is used to move the cursor to the next row in the ResultSet and returns true if successful, otherwise false when there are no more rows. 
+"first()": Moves the cursor to the first row of the ResultSet. 
+"last()": Moves the cursor to the last row of the ResultSet. 
+"previous()": Moves the cursor to the previous row in the ResultSet (only available with a scrollable ResultSet). 
+
+Working with ResultSet to retrieve data from SQL queries
+The ResultSet interface declares getter methods (for example, getBoolean and getLong ) for retrieving column values from the current row.
+You can retrieve values using either the index number of the column or the alias or name of the column. The column index is usually more efficient.

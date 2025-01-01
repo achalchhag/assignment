@@ -1,0 +1,17 @@
+11. Practical Example 2: Callable Statement with IN and OUT Parameters
+Theory:
+What is a CallableStatement?
+A CallableStatement is an interface within the JDBC API that allows you to execute stored procedures in a database,
+essentially sending pre-written database logic to the server and providing a way to pass input parameters and retrieve output values from the procedure.
+
+How to call stored procedures using CallableStatement in JDBC
+Create a CallableStatement object
+Register output parameters 
+Set input parameters
+Execute the stored procedure
+Retrieve output values
+
+Working with IN and OUT parameters in stored procedures
+Input parameters allow the caller to pass a data value to the stored procedure or function. 
+Output parameters allow the stored procedure to pass a data value or a cursor variable back to the caller. 
+User-defined functions cannot specify output parameters.

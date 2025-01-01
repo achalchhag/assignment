@@ -1,0 +1,19 @@
+Theory:
+What is JDBC (Java Database Connectivity)?
+Java Database Connectivity (JDBC) is a Java API that allows Java programs to connect to and access data in databases.
+
+Importance of JDBC in Java Programming
+JDBC helps you to write Java applications that manage these three programming activities: Connect to a data source, like a database. Send queries and update statements to the database.
+Retrieve and process the results received from the database in answer to your query.
+ 
+JDBC Architecture: Driver Manager, Driver, Connection, Statement, and ResultSet
+DriverManager:
+This class acts as a registry for all available JDBC drivers. When a Java application wants to connect to a database, it uses the DriverManager to locate the appropriate driver based on the provided database URL. 
+Driver:
+A specific implementation that understands how to communicate with a particular database system. Each database vendor provides its own JDBC driver which needs to be registered with the DriverManager. 
+Connection:
+Represents an active connection to a database once established through the driver. This object is used to create Statements and manage transactions with the database. 
+Statement:
+An interface that allows you to send SQL queries to the database. You can use a Statement object to execute queries like SELECT, INSERT, UPDATE, and DELETE. 
+ResultSet:
+A table-like object that holds the results of an executed SQL query. Each row in the ResultSet represents a record retrieved from the database, and you can iterate through the rows using methods like next() to access data from each column

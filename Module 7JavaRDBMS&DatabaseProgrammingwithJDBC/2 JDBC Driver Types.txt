@@ -1,0 +1,34 @@
+2. JDBC Driver Types
+Theory:
+Overview of JDBC Driver Types:
+Type 1: JDBC-ODBC Bridge Driver 
+Type 2: Native-API Driver
+Type 3: Network Protocol Driver
+Type 4: Thin Driver
+Type-1:
+Type-1 driver or JDBC-ODBC bridge driver uses ODBC driver to connect to the database. 
+The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC function calls. 
+Type-1 driver is also called Universal driver because it can be used to connect to any of the database.
+
+Type-2:
+The Native API driver uses the client -side libraries of the database. This driver converts JDBC method calls into native calls of the database API. 
+In order to interact with different database, this driver needs their local API, that’s why data transfer is much more secure as compared to type-1 driver. 
+This driver is not fully written in Java that is why it is also called Partially Java driver
+
+Type-3:
+The Network Protocol driver uses middleware (application server) that converts JDBC calls directly or indirectly into the vendor-specific database protocol.
+Here all the database connectivity drivers are present in a single server, hence no need of individual client-side installation
+
+Type-4:
+Type-4 driver is also called native protocol driver. This driver interact directly with database. 
+It does not require any native database library, that is why it is also known as Thin Driver
+
+Comparison and Usage of Each Driver Type
+Type 1 (JDBC-ODBC Bridge):
+Primarily used for legacy systems where ODBC drivers are already in place, but should be avoided for new applications due to performance concerns. 
+Type 2 (Native-API Driver):
+Suitable for applications where high performance is critical and the target database platform is well-supported by the native API. 
+Type 3 (Middleware Driver):
+Useful in scenarios where a centralized middleware server is already being used for managing database connections and providing additional features. 
+Type 4 (Pure Java Driver):
+Considered the most widely used driver type for modern Java applications due to its portability, performance, and ease of deployment

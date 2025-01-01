@@ -1,0 +1,27 @@
+5. JDBC CRUD Operations (Insert, Update, Select, Delete)
+Theory:
+Insert: Adding a new record to the database.
+Update: Modifying existing records.
+Select: Retrieving recordsfrom the database.
+Delete: Removing records from the database.
+
+1. Insert
+Concept:
+The INSERT statement adds a new row to a specified table in the database.
+You provide values for the columns to be inserted.
+
+2. Update
+Concept:
+The UPDATE statement modifies existing rows in a table.
+You specify the columns to be updated and their new values.
+A WHERE clause is used to filter the rows to be updated.
+
+3. Select
+Concept:
+The SELECT statement retrieves data from one or more tables.
+You can specify the columns to retrieve and use a WHERE clause to filter the results.
+
+4. Delete
+Concept:
+The DELETE statement removes rows from a table.
+A WHERE clause is essential to specify which rows to delete.

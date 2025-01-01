@@ -1,0 +1,16 @@
+10. Practical Example 1: Swing GUI for CRUD Operations
+Theory:
+Introduction to Java Swing for GUI development
+Swing has about four times the number of User Interface [UI] components as AWT and is part of the standard Java distribution. 
+By today’s application GUI requirements, AWT is a limited implementation, not quite capable of providing the 
+components required for developing complex GUIs required in modern commercial applications.
+
+How to integrate Swing components with JDBC for CRUD operations
+Connect to the database
+Create a new record
+Read a record
+Update a record
+Delete a record
+
+
+
