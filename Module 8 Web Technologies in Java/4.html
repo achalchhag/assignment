@@ -1,0 +1,39 @@
+<!-- CSS: Pseudo-Class
+Create a navigation menu and use pseudo-classes to:
+o Change the color of links on hover.
+o Style form inputs when they are focused -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Pseudo-Class</title>
+    <style>
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav a:hover{
+            color: red;
+        }
+        form input:focus{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <form>
+        Name : <input type="text" >
+        Email: <input type="email">
+        <input type="submit">
+    </form>
+</body>
+</html>
+
