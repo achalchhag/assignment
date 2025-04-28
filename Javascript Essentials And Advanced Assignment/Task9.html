@@ -1,0 +1,35 @@
+<!--
+Task:
+Create an HTML page with a paragraph (<p>) that displays "Hello, World!".
+Use JavaScript to:
+Change the text inside the paragraph to "JavaScript is fun!".
+Change the color of the paragraph to blue
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Paragraph with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p id="myParagraph">Hello, World!</p>
+    <script>
+        let paragraph = document.getElementById("myParagraph");
+        paragraph.innerText = "JavaScript is fun!";
+        paragraph.style.color = "blue";
+    </script>
+</body>
+</html>
