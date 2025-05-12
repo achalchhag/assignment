@@ -1,0 +1,156 @@
+Task 1:
+o Create a React component that renders a list of items (e.g., a list of fruit names). Use
+the map() function to render each item in the list
+
+List.js
+import React from 'react'
+import { useState } from 'react'
+
+export default function List() {
+    const [list , setlist]= useState(["apple","banana","orange","mango","dragonfruit"])
+  return (
+    <div>
+      {list.map((item)=>{
+        return (
+          <div key={item}>
+            <h1>{item}</h1>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+App.js
+import React from 'react'
+import List from './List'
+
+export default function App() {
+  return (
+    <div>
+      <List/>
+    </div>
+  )
+}
+
+Task 2:
+o Create a list of users where each user has a unique id. Render the user list using
+React and assign a unique key to each user
+
+User.js
+import React from 'react'
+import { useState } from 'react'
+export default function User() {
+    const [user, setuser] = useState([
+        {name:"Yuvraj", id: 1},
+        {name:"Raju", id: 2},
+        {name:"Kaju", id: 3},
+        {name:"Smith", id: 4},
+        {name:"Mohan", id: 5}
+    ]);
+  return (
+    <div>
+      {user.map((item)=>{
+        return (
+          <div key={item.id}>
+            <h1>{item.name}</h1>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+App.js
+import React from 'react'
+import User from './User'
+
+export default function App() {
+  return (
+    <div>
+      <User/>
+    </div>
+  )
+}
+
+
+Task 3:
+o Create a functional component with a counter using the useState() hook. Include
+buttons to increment and decrement the counter
+Counter.js
+import React from 'react'
+import { useState } from 'react'
+export default function Counter() {
+  const [counter, setcounter] = useState(0);
+    return (
+    <div style={{fontSize:"50px" }}>
+      <center>
+      <button onClick={()=> setcounter(counter-1)} style={{margin: "10px"}}>-</button>
+      {counter}
+      <button onClick={()=> setcounter(counter+1)} style={{margin: "10px"}}>+</button>
+      </center>
+    
+    </div>
+  )
+}
+
+App.js
+import React from 'react'
+import Counter from './Counter'
+
+export default function App() {
+  return (
+    <div>
+      <Counter/>
+    </div>
+  )
+}
+
+
+Task 4:
+o Use the useEffect() hook to fetch and display data from an API when the
+component mounts.
+App.js
+import React from 'react'
+import Fetchingproduct from './Fetchingproduct'
+
+export default function App() {
+  return (
+    <div>
+      <Fetchingproduct />
+    </div>
+  )
+}
+Fetchingapi.js
+import React, { use } from 'react'
+import { useEffect, useState } from 'react'
+
+export default function Fetchingproduct() {
+    const [data, setdata] = useState([]);
+    useEffect(() => {
+        fetch("https://fakestoreapi.com/products")
+        .then((response) => response.json())
+        .then((json) => setdata(json))
+        .catch((error) => console.log(error))
+    }, [])
+
+  
+    return (
+    <div>
+        {data.map((item) => {
+            return (
+            <div key={item.id}>
+                <h1>{item.title}</h1>
+                <img src={item.image} alt={item.title} />
+                <p>{item.description}</p>
+                <p>Price: INR {item.price}</p>
+                <p>Category : {item.category}</p>
+                <p>Rating: {item.rating.rate} ({item.rating.count} reviews)</p>
+            </div>
+            )
+        })}
+      
+    </div>
+  )
+}
+
