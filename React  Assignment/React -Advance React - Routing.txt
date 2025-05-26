@@ -59,3 +59,66 @@ export default function NotFound() {
     </div>
   );
 }
+
+
+/*o Create a navigation bar using React Router’s Link component that allows users to
+switch between the Home, About, and Contact pages
+*/
+import React from "react";
+import { BrowserRouter as Router, Route, Switch, Link, BrowserRouter, Routes } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";    
+
+
+export default function App() {
+  return (
+    <div>
+    <h1>Navigation Menu</h1>
+      <BrowserRouter>
+      <Link to="/home">Home</Link><br />
+      <Link to="/about">About</Link><br />
+      <Link to="/contact">Contact</Link><br />
+      <Routes>
+      <Route  path="/home" element={<Home></Home>} />
+      <Route  path="/about"element={<About></About>} />
+      <Route  path="/contact" element={<Contact></Contact>} />
+      </Routes>
+
+      </BrowserRouter>
+    </div>
+  )
+}
+
+Home.js
+import React from "react";
+export default function Home() {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>Welcome to the home page!</p>
+    </div>
+  );
+}
+
+Contact.js
+import React from "react";
+export default function About() {
+  return (
+    <div>
+      <h1>Contact Page</h1>
+      <p>Welcome to the Contact page!</p>
+    </div>
+  );
+}
+
+About.js
+import React from "react";
+export default function About() {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <p>Welcome to the about page!</p>
+    </div>
+  );
+}
