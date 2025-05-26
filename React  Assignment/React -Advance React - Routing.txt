@@ -1,0 +1,61 @@
+/*Set up a basic React Router with two routes: one for a Home page and one for an
+About page. Display the appropriate content based on the URL
+*/
+APP.JS
+import React from 'react';
+import { BrowserRouter as Router, Route, BrowserRouter, Routes, Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import NotFound from './NotFound';  
+
+export default function Routing() {
+  return (
+    <div>
+       <BrowserRouter>
+       <Link to="/">Home</Link><br />
+       <Link to="/about">About</Link><br />
+       <Link to="/notfound">Not Found</Link><br />
+         <Routes>
+            
+            <Route exact path="/" element={<Home></Home>} />
+            <Route path="/about" element={<About></About>} />
+            <Route path='/notfound' element={<NotFound></NotFound>} />
+           
+        </Routes>
+       </BrowserRouter>
+      
+    </div>
+  )
+}
+
+HOME.JS 
+import React from "react";
+export default function Home() {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>Welcome to the home page!</p>
+    </div>
+  );
+}
+
+ABOUT.JS
+import React from "react";
+export default function About() {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <p>Welcome to the about page!</p>
+    </div>
+  );
+}
+
+NOTFOUND.JS
+import React from "react";
+export default function NotFound() {
+  return (
+    <div>
+      <h1>404 not found !!</h1>
+    </div>
+  );
+}
