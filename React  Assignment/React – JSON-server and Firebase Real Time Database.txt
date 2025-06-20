@@ -1,0 +1,163 @@
+Q1
+import logo from './logo.svg';
+import './App.css';
+import axios from 'axios'
+import React from 'react'
+import { useState, useEffect } from 'react';
+
+function App() {
+  const [data, setdata] = useState();
+      async function fetchData() {
+         const gproduct= await axios.get('https://fakestoreapi.com/products')
+           setdata(gproduct.data);
+      }
+      useEffect(() => {
+          fetchData();
+      }, []);
+  return (
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>image</th>
+            <th>Rate</th>
+            <th>Count</th>
+          </tr> 
+          </thead>        
+          <tbody>
+            {data && data.map((item) => (
+                <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.title}</td>
+                    <td>{item.price}</td>
+                    <td>{item.description}</td>
+                    <td>{item.category}</td>
+                    <td><img src={item.image} width={20}></img></td>
+                    <td>{item.rating.rate}</td>
+                    <td>{item.rating.count}</td>
+                </tr>
+            ))}
+            </tbody>  
+      </table>
+    </div>
+  );
+}
+
+export default App;
+
+Tablefetch.js 
+import axios from 'axios'
+import React from 'react'
+import { useState, useEffect } from 'react';
+
+
+export default function Tablefetch() {
+    const [data, setdata] = useState();
+    async function fetchData() {
+       const gproduct= await axios.get('https://fakestoreapi.com/products')
+         setdata(gproduct.data);
+    }
+    useEffect(() => {
+        fetchData();
+    }, []);
+  
+    return (
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>image</th>
+            <th>Rate</th>
+            <th>Count</th>
+          </tr> 
+          </thead>        
+          <tbody>
+            {data && data.map((item) => (
+                <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.title}</td>
+                    <td>{item.price}</td>
+                    <td>{item.description}</td>
+                    <td>{item.category}</td>
+                    <td><img src={item.image}></img></td>
+                    <td>{item.rating.rate}</td>
+                    <td>{item.rating.count}</td>
+                </tr>
+            ))}
+            </tbody>  
+      </table>
+    </div>
+  )
+}
+
+Q2
+import axios from 'axios'
+import React from 'react'
+import { useState, useEffect } from 'react';
+
+import { ClipLoader } from 'react-spinners';
+
+
+
+export default function Tablefetch() {
+    const [loading, setLoading] = useState(true);
+    const [data, setdata] = useState();
+    async function fetchData() {
+       const gproduct= await axios.get('https://fakestoreapi.com/products')
+         setdata(gproduct.data);
+         setLoading(false);
+    }
+    useEffect(() => {
+        fetchData();
+    }, []);
+  
+    return (
+    <div>
+        <div className="flex items-center justify-center min-h-screen">
+      {loading ? (
+        <ClipLoader color="#36d7b7" size={50} />
+      ) : (
+        <h1>{data}</h1>
+      )}
+    </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>image</th>
+            <th>Rate</th>
+            <th>Count</th>
+          </tr> 
+          </thead>        
+          <tbody>
+            {data && data.map((item) => (
+                <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.title}</td>
+                    <td>{item.price}</td>
+                    <td>{item.description}</td>
+                    <td>{item.category}</td>
+                    <td><img src={item.image}></img></td>
+                    <td>{item.rating.rate}</td>
+                    <td>{item.rating.count}</td>
+                </tr>
+            ))}
+            </tbody>  
+      </table>
+    </div>
+  )
+}
